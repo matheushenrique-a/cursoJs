@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       .ulist {
+        list-style: none;
+        padding-left: 0;
+       }
+
+       .ulist li {
+        position: relative;
+        padding-left: 32px;
+       }
+
+       .ulist li::before {
+        content:"";
+        position: absolute;
+        left: 0;
+        transform: translateY(-15%);
+        width: 24px;
+        height: 24px;
+        background-image: url(1384060.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+       }
+
+       nav {
+        width: 100%;
+        background: rgb(3, 3, 3);
+        display: flex;
+        align-items: center;
+       }
+       
+       nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        padding: 7px;
+        display: flex;
+        height: 50px;
+        align-items: center;
+       }
+
+       nav a:hover {
+        background: darkred;
+       }
+
+       nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+       }
+       </style>
+    
+</head>
+<body>
+    
+<!--
+    nav>ul>li*4>a[href="#"]{Produto $}
+-->
+
+    <nav>
+        <ul>
+            <li><a href="#">Produto</a></li>
+            <li><a href="#">Produto</a></li>
+            <li><a href="#">Produto</a></li>
+            <li><a href="#">Produto</a></li>
+        </ul>
+    </nav>
+
+    
+        <ul class="ulist">
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+    </ul>
+    
+<!--
+    ol[type="I" start="20"]>li*3{Item $}
+-->
+
+    <ol type="I" start="20">
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+    </ol><br>
+
+    <dl>
+        <dt>Café</dt><dd>É o começo de um dia de trabalho, um símbolo de nos envolvermos em reuniões e relatórios de projetos. É sobre energia no lugar da calmaria. Em muitos países, o café representa um primeiro encontro que é fácil de fugir. Ou uma oportunidade para networking.</dd>
+        <dt>Azeitona</dt><dd>Símbolo de fertilidade e paz, a planta está presente na mitologia grega, sendo consagrada aos deuses Minerva, Júpiter e Apolo.</dd>
+        <dt>Dinheiro</dt><dd>Meio de troca, sob a forma de moedas ou notas, usado na aquisição de bens, na compra de serviços, de mão-de-obra , ou noutras transacções financeiras, emitido pelo governo de cada país.</dd>
+    </dl>
+
+</body>
+</html>
